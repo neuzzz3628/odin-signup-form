@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.eot');
+    src: url('fonts/Norse-Bold.woff2') format('woff2');
+}
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+body{
+    display:flex;
+    overflow:hidden;
+}
+
+/* This part below is for background space */
+
+.theme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    position: relative;
+    box-shadow: 5px 0px 10px rgb(14, 52, 17);
+}
+
+.bg-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#main-bg {
+    height: 100%;
+}
+
+.bg-logo {
+    position: absolute;
+    top: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height:20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+#main-logo {
+    height: 15vh;
+}
+
+#logo-text{
+    font-family: 'Norse', 'Trebuchet MS', Arial, sans-serif;
+    color:white;
+    font-size: 4vw;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 1vh;
+    color: white;
+    font-size: 1vw;
+}
+
+
+/* This part below is for text-space */
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(236, 236, 236);
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    padding: 0 20vw 0 5vw;
+}
+
+.form-input{
+    background-color: white;
+    padding: 0 20vw 1vw 5vw;
+    box-shadow: 5px 5px 10px gray;
+    color: rgb(56, 56, 56);
+}
+
+.group{
+    display: flex;
+    padding: 0.5vw 0 1vw 0;
+        /* font-size: 1vw; */
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    padding-right: 4vw;
+    font-size:0.8vw;
+    font-weight: 700;
+    letter-spacing: 0.11vw;
+}
+
+input{
+    appearance:none;
+}
+/* below is restyle input box */
+input{
+    font-size: 1vw;
+    height:2vw;
+    width: 15vw;
+    border-radius: 0.25vw;
+    border-color: #E5E7EB;
+    /* border:2px solid #E5E7EB; */
+    outline: none;
+}
+
+input:user-invalid{
+    border-color: rgb(245, 78, 69);
+}
+#pwd:invalid, #pwd-Conf:invalid{
+    border-color: rgb(245, 78, 69);
+}
+
+input:focus, input:active{
+    border:2px solid rgb(64, 147, 210);
+    border-radius: 0.25vw;
+    box-shadow: 0 5px 10px gray;
+    background-color: #e5e7ebc8;
+}
+
+.bottom-text{
+    padding: 2vw 20vw 2vw 5vw;
+}
+
+button{
+    background-color: #596D48;
+    height: 3vw;
+    width: 15vw;
+    font-size: 1.2vw;
+    font-weight: 700;
+    color:white;
+    margin-bottom: 1.2vw;
+    border-radius: 0.5vw;
+}
+
+span{
+    color:#596D48;
+    font-weight: 700;
+    margin-bottom: 1.2vw;
+}

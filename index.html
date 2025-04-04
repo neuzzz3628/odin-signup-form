@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="theme">
+      <div class="bg-container">
+        <img
+          id="main-bg"
+          src="./assets/plants-bg.jpg"
+          alt="Green plants background"
+        />
+        <div class="bg-logo">
+          <img id="main-logo" src="./assets/odin-logo.png" alt="Odin logo" />
+          <div id="logo-text">Odin</div>
+        </div>
+      </div>
+      <p class="photo-credit">Photo by Halie West on Unsplash</p>
+    </div>
+
+    <form id="myForm">
+      <div class="header">
+        <h2>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </h2>
+        <h2>You <em>know</em> you want to.</h2>
+      </div>
+      <div class="form-input">
+        <h2 id="form-header">Let's do this!</h2>
+        <div class="group">
+          <label for="firstName"
+            >FIRST NAME
+            <input type="text" id="firstName" name="firstName" required />
+          </label>
+
+          <label for="lastName"
+            >LAST NAME
+            <input type="text" id="lastName" name="lastName" required />
+          </label>
+        </div>
+        <div class="group">
+          <label for="email"
+            >EMAIL
+            <input type="email" id="email" name="email" required />
+          </label>
+
+          <label for="phone-number"
+            >PHONE NUMBER
+            <input type="tel" id="phone-number" name="phone-number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" />
+          </label>
+        </div>
+        <div class="group">
+          <label for="pwd"
+            >PASSWORD
+            <input type="password" id="pwd" name="password" required />
+          </label>
+
+          <label for="pwd-Conf"
+            >CONFIRM PASSWORD
+            <input type="password" id="pwd-Conf" name="passwordConfirm" required />
+          </label>
+        </div>
+      </div>
+      <div class="bottom-text">
+        <button type="submit" for="myForm">Create Account</button>
+        <div>Already have an account? <span>Log in</span></div>
+      </div>
+    </form>
+  </body>
+</html>
